@@ -1,0 +1,150 @@
+.car_list_container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.car_list_header {
+  font-size: 38px;
+  font-weight: normal;
+  text-shadow: 3px 3px 3px rgb(0 0 0 / 19%);
+}
+
+.car_list_header_colored {
+  color: #0879c9;
+  font-size: 50px;
+  text-shadow: 3px 3px 3px rgb(0 0 0 / 19%);
+}
+
+.cars_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.cars_section {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+.cars_wrapper {
+  width: 825px;
+  box-shadow: 0px 0px 15px 0px #d6d6d6;
+  align-items: center;
+  height: 100%;
+  border-bottom: 0.5px solid #d6d6d6;
+}
+
+.car_list_wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.car_item {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.cars_wrapper h2 {
+  font-size: 32px;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 19%);
+  margin: 50px 0;
+}
+
+.car_image {
+  height: auto;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.car_image_wrapper {
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+}
+
+.local {
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  right: 50px;
+  background: #f45c5d;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.foreign {
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  right: 50px;
+  background: #08c98f;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.car_name {
+  color: #000;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.car_item hr {
+  border: none;
+  border-bottom: 1px solid #dee2e6;
+  height: 15px;
+}
+
+.car_price_cover {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.car_price {
+  font-size: 18px;
+  color: #d60411;
+}
+
+.car_price_old {
+  text-decoration: line-through;
+  font-weight: 300;
+  margin-left: 13px;
+  font-size: 15px;
+}
+
+.car_button {
+  width: 85%;
+  height: 45px;
+  font-size: 13px;
+  color: #fff;
+  padding: 13px;
+  outline: none;
+  background-color: #0879c9;
+  border: none;
+  border-radius: 4px;
+  transition: 0.5s all;
+  font-weight: 600;
+  box-shadow: 0px 4px 8px 0px rgb(0 0 0 / 45%);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.car_button:hover {
+  background-color: #000;
+}

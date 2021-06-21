@@ -1,0 +1,161 @@
+.image_style {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 550px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.breadcrumb_wrapper {
+  height: 56px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.breadcrumb_wrapper h3 {
+  color: #f45c5d;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.car_container {
+  display: flex;
+  padding: 64px 50px 64px 100px;
+  width: 100%;
+}
+
+.image_wrapper {
+  margin-right: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.sold_style {
+  background-color: #0879c9;
+  width: fit-content;
+  padding: 10px 20px;
+  color: #fff;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 1;
+  font-weight: bold;
+  cursor: pointer;
+  /* transform: rotate(45deg); */
+  overflow: visible;
+}
+
+.details_wrapper {
+  width: 100%;
+}
+
+.nameprice_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  width: 70%;
+  font-size: 28px;
+}
+
+.price {
+  width: 30%;
+  font-size: 28px;
+}
+
+.condition_wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.viewer_count {
+  background-color: #0879c9;
+  width: 100%;
+  padding: 20px 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.used_type {
+  background-color: #0879c9;
+  width: fit-content;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 4px;
+  margin: 10px 0;
+  margin-right: 10px;
+}
+
+.used_type1 {
+  background-color: #494b4d;
+  width: fit-content;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 4px;
+  margin: 10px 10px;
+}
+.overview_text {
+  font-size: 24px;
+}
+
+.overview_wrapper {
+  margin-top: 30px;
+}
+
+.overview_details_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+}
+
+.overview p {
+  margin-left: 20px;
+  color: #686868;
+}
+
+.overview_text1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.overview_text2 {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+.gen_info_wrapper:first-child {
+  margin-top: 20px;
+}
+
+.gen_info_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.geninfo_start {
+  color: #6d6d6d;
+  margin: 0;
+}
+
+.geninfo_end {
+  margin: 0;
+}
+
+.geninfo_hr {
+  border: none;
+  border-bottom: 1px solid #c4c4c4;
+}
