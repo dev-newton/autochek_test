@@ -39,7 +39,7 @@ const ImageCarousel = ({ carMedia }) => {
             type="button"
             onClick={onClickHandler}
             title={label}
-            style={{ ...arrowStyles, left: 15 }}
+            style={{ ...arrowStyles, left: 15 }as React.CSSProperties}
           >
             <AiFillCaretLeft color="#fff" />
           </button>
@@ -51,7 +51,7 @@ const ImageCarousel = ({ carMedia }) => {
             type="button"
             onClick={onClickHandler}
             title={label}
-            style={{ ...arrowStyles, right: 15 }}
+            style={{ ...arrowStyles, right: 15 }as React.CSSProperties}
           >
             <AiFillCaretRight color="#fff" />
           </button>
@@ -92,7 +92,7 @@ const ImageCarousel = ({ carMedia }) => {
           ) : (
             cml.type === "video/mp4" && (
               <div>
-                <video width="600" height="465" controls autoplay muted>
+                <video width="600" height="465" controls autoPlay muted>
                   <source src={cml.url} type="video/mp4" />
                   Your browser does not support HTML video.
                 </video>
