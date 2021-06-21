@@ -18,16 +18,19 @@ export default function Home({ carMakes, carList }) {
 }
 
 export const getServerSideProps:GetServerSideProps = async () => {
-  const res = await fetch(`${BASE_API_URL}/make?popular=true`);
-  const res_1 = await fetch(`${BASE_API_URL}/car/search`);
 
-  const carMakes = await res.json();
+  const res_1 = await fetch(`${BASE_API_URL}/car/search`);
+  const res = await fetch(`${BASE_API_URL}/make?popular=true`);
+
+
   const carList = await res_1.json();
+  const carMakes = await res.json();
 
   return {
     props: {
-      carMakes,
       carList,
+      carMakes,
+    
     },
   };
 };
