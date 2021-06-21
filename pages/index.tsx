@@ -5,13 +5,13 @@ import ImageSlider from "../components/ImageSlider";
 import CarList from "../components/CarList/CarList";
 import { GetServerSideProps } from "next";
 
-function Home({ carMakes, carList }) {
+function Home({ carMakes }) {
   // console.log('TEST 1: ',carList )
   return (
     <div>
       <Layout title="Autochek Test">
         <ImageSlider carMakes={carMakes} />
-        <CarList carList={carList} />
+        {/* <CarList carList={carList} /> */}
       </Layout>
     </div>
   );
@@ -22,14 +22,14 @@ export const getServerSideProps:GetServerSideProps = async () => {
   const res_1 = await fetch(`${BASE_API_URL}/make?popular=true`);
 
 
-  const carList = await res.json();
+  // const carList = await res.json();
   const carMakes = await res_1.json();
 
-  console.log(13,res)
+  console.log(13, await res.json())
 
   return {
     props: {
-      carList,
+      // carList,
       carMakes,
     },
   };
