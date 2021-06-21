@@ -3,6 +3,7 @@ import { BASE_API_URL } from "../config";
 
 import ImageSlider from "../components/ImageSlider";
 import CarList from "../components/CarList/CarList";
+import { GetServerSideProps } from "next";
 
 export default function Home({ carMakes, carList }) {
   return (
@@ -15,7 +16,7 @@ export default function Home({ carMakes, carList }) {
   );
 }
 
-export const getServerSideProps = async () => {
+export const getServerSideProps:GetServerSideProps = async () => {
   const res = await fetch(`${BASE_API_URL}/make?popular=true`);
   const res_1 = await fetch(`${BASE_API_URL}/car/search`);
 

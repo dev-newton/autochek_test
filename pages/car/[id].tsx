@@ -9,6 +9,7 @@ import { BASE_API_URL } from "../../config";
 import InspectionArea from "../../components/InspectionArea/InspectionArea";
 
 import styles from "./Car.module.css";
+import { GetServerSideProps } from "next";
 
 const Car = ({ car, carMedia }) => {
   const capitalizeFirstLetter = (string) => {
@@ -144,7 +145,7 @@ const Car = ({ car, carMedia }) => {
 
 export default Car;
 
-export const getServerSideProps = async (context) => {
+export const getServerSideProps:GetServerSideProps = async (context) => {
   const { id } = context.query;
 
   const res = await fetch(`${BASE_API_URL}/car/${id}`);
