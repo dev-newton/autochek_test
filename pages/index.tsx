@@ -6,7 +6,7 @@ import CarList from "../components/CarList/CarList";
 import { GetServerSideProps } from "next";
 
 function Home({ carMakes, carList }) {
-  console.log('TEST 1: ',carList )
+  // console.log('TEST 1: ',carList )
   return (
     <div>
       <Layout title="Autochek Test">
@@ -25,7 +25,7 @@ export const getServerSideProps:GetServerSideProps = async () => {
   const carList = await res.json();
   const carMakes = await res_1.json();
 
-  console.log(13,carList)
+  console.log(13,res)
 
   return {
     props: {
