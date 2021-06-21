@@ -5,7 +5,7 @@ import ImageSlider from "../components/ImageSlider";
 import CarList from "../components/CarList/CarList";
 import { GetServerSideProps } from "next";
 
-export default function Home({ carMakes, carList }) {
+function Home({ carMakes, carList }) {
   console.log('TEST 1: ',carList )
   return (
     <div>
@@ -32,3 +32,5 @@ export const getServerSideProps:GetServerSideProps = async () => {
     },
   };
 };
+
+export default Home
