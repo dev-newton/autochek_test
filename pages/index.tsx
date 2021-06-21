@@ -25,7 +25,7 @@ export const getServerSideProps:GetServerSideProps = async () => {
   // const carList = await res.json();
   const carMakes = await res_1.json();
 
-  console.log(13, await res.json())
+  console.log(119, await res.json())
 
   return {
     props: {
