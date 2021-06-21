@@ -18,7 +18,7 @@ const CarItem = ({ car }) => {
                 car.sellingCondition === "local" ? styles.local : styles.foreign
               }
             >
-              {capitalizeFirstLetter(car.sellingCondition)}
+              {car.sellingCondition && capitalizeFirstLetter(car.sellingCondition)}
             </p>
             <Image
               className={styles.car_image}
