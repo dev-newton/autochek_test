@@ -6,6 +6,7 @@ import CarList from "../components/CarList/CarList";
 import { GetServerSideProps } from "next";
 
 export default function Home({ carMakes, carList }) {
+  console.log('TEST 1: ',carList )
   return (
     <div>
       <Layout title="Autochek Test">
