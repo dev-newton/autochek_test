@@ -25,6 +25,7 @@ const CarItem = ({ car }) => {
               src={car.imageUrl}
               width="auto"
               height="auto"
+              alt={car.imageUrl}
             />
           </div>
           <hr />

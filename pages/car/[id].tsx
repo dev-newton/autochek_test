@@ -19,7 +19,7 @@ const Car = ({ car, carMedia }) => {
     <div>
       <Layout title={`${car.year} ${car.model.make.name} ${car.model.name} `}>
         <div className={styles.image_style}>
-          <Image src={car.model.make.imageUrl} width="auto" height="300" />
+          <Image src={car.model.make.imageUrl} width="auto" height="300" alt={car.model.make.imageUrl} />
         </div>
         <div className={styles.breadcrumb_wrapper}>
           <Link href="/">

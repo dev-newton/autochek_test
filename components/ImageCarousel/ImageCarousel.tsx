@@ -86,7 +86,7 @@ const ImageCarousel = ({ carMedia }) => {
         <div key={i}>
           {cml.type === "image/jpeg" ? (
             <>
-              <Image width="600" height="465" src={cml.url} />
+              <Image alt={cml.url} width="600" height="465" src={cml.url} />
               <p className={styles.legend}>{cml.name}</p>
             </>
           ) : (
