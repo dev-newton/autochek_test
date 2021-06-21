@@ -5,9 +5,8 @@ import ImageSlider from "../components/ImageSlider";
 import CarList from "../components/CarList/CarList";
 import { GetServerSideProps } from "next";
 
-export default function Home({ carMakes, carList, url }) {
+export default function Home({ carMakes, carList }) {
   console.log('TEST 1: ',carList )
-  console.log('URL 1: ',url )
   return (
     <div>
       <Layout title="Autochek Test">
@@ -19,19 +18,17 @@ export default function Home({ carMakes, carList, url }) {
 }
 
 export const getServerSideProps:GetServerSideProps = async () => {
-  const url = `${BASE_API_URL}/car/search`
-  const res_1 = await fetch(`${BASE_API_URL}/car/search`);
-  const res = await fetch(`${BASE_API_URL}/make?popular=true`);
+  const res = await fetch(`${BASE_API_URL}/car/search`);
+  const res_1 = await fetch(`${BASE_API_URL}/make?popular=true`);
 
 
-  const carList = await res_1.json();
-  const carMakes = await res.json();
+  const carList = await res.json();
+  const carMakes = await res_1.json();
 
   return {
     props: {
       carList,
       carMakes,
-    url
     },
   };
 };
